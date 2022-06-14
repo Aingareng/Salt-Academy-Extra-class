@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+/* ============================== Styling Header ===================================== */
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    grid-area: header;
+    font-family: "Quicksand";
+    display: inline;
+
+}
+
+header div {
+    text-align: center;
+    box-shadow: 0px 5px 8px 8px gray;
+    background-color: #ef233c;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header div h1 {
+    color: white;
+    font-size: 250%;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+
+header div p {
+    color: white;
+    width: 900px;
+    text-align: center;
+}
+
+header nav {
+    background-color: #d90429;
+    /* position: sticky;
+    top: 0; */
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+header nav ul li {
+    margin: 10px;
+}
+
+header nav ul li :hover {
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+header nav ul li a {
+
+    color: white;
+    text-decoration: none;
+}
+
+/* main style */
+main {
+    grid-area: main;
+}
+
+#content {
+    max-width: 70%;
+    overflow: auto;
+}
+
+.img-content {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+article {
+    margin: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px 0px black;
+    border-radius: 5px;
+
+}
+
+article h2 {
+    color: #00b4d8;
+    font-family: "Quicksand";
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+article p {
+    margin-top: 10px;
+    text-align: justify;
+    font-family: "Quicksand";
+}
+
+#tour h3 {
+    font-size: 20px;
+    font-family: "Quicksand";
+    font-weight: 700;
+    margin: 10px;
+}
+
+
+
+
+aside {
+    position: absolute;
+    right: 40px;
+    top: 270px;
+    box-shadow: 2px 2px 5px 0px black;
+    border-radius: 5px;
+    padding: 20px;
+    width: 20%;
+    font-family: "Quicksand";
+}
+
+aside h4 {
+    font-weight: 700;
+    color: #00b4d8;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+aside section {
+    margin-top: 20px;
+}
+
+aside section h4 {
+    text-align: start;
+    font-weight: 700;
+    color: #00b4d8;
+    margin-bottom: 10px;
+}
+
+aside figure {
+    text-align: center;
+}
+
+aside figure figcaption {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+aside img {
+    width: 150px;
+}
+
+th {
+    font-weight: bold;
+    text-align: left;
+}
+
+td {
+    text-align: right;
+}
+
+footer {
+    grid-area: footer;
+    color: white;
+    font-family: "Quicksand";
+    background-color: #d90429;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        'header header header header header'
+        'main main main main main'
+        'footer footer footer footer footer';
+
+}
