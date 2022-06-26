@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
 html,
 body,
 div,
@@ -82,12 +80,12 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -102,228 +100,218 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
 
 body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
+  line-height: 1;
 }
 
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
-    content: none;
+  content: "";
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-
-
-
-
-
-
-
-/* ============================== Styling Header ===================================== */
-html {
-    scroll-behavior: smooth;
+.navbar {
+  background-color: teal !important;
 }
 
-header {
-    grid-area: header;
-    font-family: "Quicksand";
-    display: inline;
-
-}
-
-header div {
-    text-align: center;
-    box-shadow: 0px 5px 8px 8px gray;
-    background-color: #ef233c;
-    height: 200px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-header div h1 {
-    color: white;
-    font-size: 250%;
-    font-weight: 600;
-    margin-bottom: 20px;
-
-}
-
-header div p {
-    color: white;
-    width: 900px;
-    text-align: center;
-}
-
-header nav {
-    background-color: #d90429;
-    /* position: sticky;
-    top: 0; */
-}
-
-header nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 50px;
-}
-
-header nav ul li {
-    margin: 10px;
-}
-
-header nav ul li :hover {
-    border-radius: 3px;
-    font-weight: bold;
-}
-
-header nav ul li a {
-
-    color: white;
-    text-decoration: none;
-}
-
-/* main style */
-main {
-    grid-area: main;
-}
-
-#content {
-    max-width: 70%;
-    overflow: auto;
-}
-
-.img-content {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    object-position: center;
-}
-
-
-article {
-    margin: 20px;
-    padding: 15px;
-    box-sizing: border-box;
-    box-shadow: 2px 2px 5px 0px black;
-    border-radius: 5px;
-
-}
-
-article h2 {
-    color: #00b4d8;
-    font-family: "Quicksand";
-    font-weight: bold;
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-article p {
-    margin-top: 10px;
-    text-align: justify;
-    font-family: "Quicksand";
-}
-
-#tour h3 {
-    font-size: 20px;
-    font-family: "Quicksand";
-    font-weight: 700;
-    margin: 10px;
-}
-
-
-
-
-aside {
-    position: absolute;
-    right: 40px;
-    top: 270px;
-    box-shadow: 2px 2px 5px 0px black;
-    border-radius: 5px;
-    padding: 20px;
-    width: 20%;
-    font-family: "Quicksand";
-}
-
-aside h4 {
-    font-weight: 700;
-    color: #00b4d8;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-aside section {
-    margin-top: 20px;
-}
-
-aside section h4 {
-    text-align: start;
-    font-weight: 700;
-    color: #00b4d8;
-    margin-bottom: 10px;
-}
-
-aside figure {
-    text-align: center;
-}
-
-aside figure figcaption {
-    text-align: center;
-    font-weight: bold;
-}
-
-
-aside img {
-    width: 150px;
-}
-
-th {
-    font-weight: bold;
-    text-align: left;
-}
-
-td {
-    text-align: right;
-}
-
-footer {
-    grid-area: footer;
-    color: white;
-    font-family: "Quicksand";
-    background-color: #d90429;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header img {
+  position: relative;
+  z-index: 3;
+  width: 50px;
+  border-radius: 4px;
 }
 
 body {
-    display: grid;
-    grid-template-areas:
-        'header header header header header'
-        'main main main main main'
-        'footer footer footer footer footer';
-
+  background-color: wheat;
 }
+body #hero-container {
+  margin-top: 10%;
+}
+body #hero-container #hero-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  margin-bottom: 40px;
+}
+body #hero-container #hero-section .title h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: teal;
+}
+body #hero-container #hero-section .title p {
+  font-family: "Quicksand";
+  font-size: large;
+}
+body #hero-container #hero-section .hero-mage div img {
+  width: 700px;
+}
+body main {
+  margin-top: 70px;
+}
+body main #form-content form {
+  box-shadow: 1px 1px 4px 0px gray;
+  margin: 20px auto;
+  padding: 20px;
+  width: 50%;
+}
+body main #form-content form input {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 50px;
+}
+body main #form-content form textarea {
+  width: 100%;
+}
+body main #form-content form button {
+  border: none;
+  background-color: teal;
+  border-radius: 3px;
+  padding: 5px;
+  width: 70px;
+}
+body main #content {
+  display: flex;
+  justify-content: space-between;
+}
+body main #content article section {
+  box-shadow: 1px 1px 4px 0px gray;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  width: 70%;
+  width: 80%;
+  margin: 10px auto;
+}
+body main #content article section h1 {
+  font-family: "Quicksand";
+  margin-bottom: 20px;
+}
+body main #content article section img {
+  width: 100%;
+  height: 400px;
+  object-position: center;
+  object-fit: cover;
+  padding: 15px;
+}
+body main #content article section p {
+  color: teal;
+}
+body main #content article section span {
+  margin: 4px;
+  padding: 3px;
+  background-color: rgb(75, 143, 189);
+  border-radius: 3px;
+  box-shadow: 1px 1px 4px 0px gray;
+}
+body main #content article section span a {
+  text-decoration: none;
+  color: white;
+}
+body main #content #author-aside section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+body main #content #author-aside section img {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 3px solid teal;
+  margin: 10px auto;
+}
+body main #content #author-aside section h5 {
+  margin: 10px auto;
+  font-family: "Quicksand";
+  font-weight: 700;
+}
+body main #content aside {
+  box-shadow: 1px 1px 4px 0px gray;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  width: 70%;
+  height: 50%;
+}
+body main #content aside h2 {
+  font-family: "Quicksand";
+}
+body main #content aside ol li a {
+  text-decoration: none;
+  color: teal;
+}
+body main #content aside ol li :hover {
+  box-shadow: 1px 1px 4px 0px gray;
+}
+
+footer {
+  background-color: teal;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  margin-top: 15px;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  #content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12%;
+  }
+}
+@media screen and (max-width: 576px) {
+  header nav div a {
+    display: inline-block;
+    width: 10%;
+  }
+  header nav div a img {
+    width: 100%;
+  }
+  main #form-content {
+    margin-top: 10%;
+  }
+  #hero-container #hero-section {
+    margin-top: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  #hero-container #hero-section .hero-image div img {
+    width: 300px;
+  }
+  footer {
+    margin-top: 100px;
+  }
+  main #content {
+    margin-top: 15%;
+    flex-direction: column;
+    align-items: center;
+  }
+  main #content #author-aside {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

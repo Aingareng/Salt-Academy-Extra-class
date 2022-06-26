@@ -147,8 +147,14 @@ html {
 header {
     grid-area: header;
     font-family: "Quicksand";
-    /* display: inline; */
+    display: inline;
 
+}
+
+nav {
+    grid-area: nav;
+    position: sticky;
+    top: 0;
 }
 
 header div {
@@ -204,6 +210,7 @@ header nav ul li a {
     color: white;
     text-decoration: none;
 }
+
 
 /* main style */
 main {
@@ -323,6 +330,7 @@ body {
     display: grid;
     grid-template-areas:
         'header header header header header'
+        'nav nav nav nav nav'
         'main main main main main'
         'footer footer footer footer footer';
 
