@@ -139,6 +139,123 @@ header img {
 body {
   background-color: wheat;
 }
+body #organization-content {
+  display: flex;
+}
+body #organization-content article {
+  box-shadow: 1px 1px 4px 0px gray;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  width: 70%;
+  flex-grow: 3;
+  flex-basis: 200%;
+}
+body #organization-content article .organization-history {
+  padding: 10px;
+}
+body #organization-content article .organization-history h1 {
+  margin-bottom: 20px;
+  font-family: "Quicksand";
+}
+body #organization-content article .organization-history img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: 3px solid teal;
+  margin-bottom: 20px;
+}
+body #organization-content article .organization-history p {
+  font-family: "Quicksand";
+  color: teal;
+  text-align: justify;
+}
+body #organization-content article .robotics-elements h1 {
+  font-family: "Quicksand";
+  margin-bottom: 20px;
+}
+body #organization-content article .robotics-elements hr {
+  width: 59%;
+  color: teal;
+}
+body #organization-content article .robotics-elements p {
+  text-align: center;
+}
+body #organization-content article .robotics-elements .robotics-elements-card {
+  display: flex;
+  justify-content: space-around;
+}
+body #organization-content article .robotics-elements .robotics-elements-card .card {
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  flex-grow: 3;
+}
+body #organization-content article .robotics-elements .robotics-elements-card .card h2,
+body #organization-content article .robotics-elements .robotics-elements-card .card p {
+  font-family: "Quicksand";
+  text-align: left;
+}
+body #organization-content article .robotics-elements .robotics-elements-gallery .all-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+body #organization-content article .robotics-elements .robotics-elements-gallery .all-card .card img {
+  width: 300px;
+  margin: 10px 5px;
+  object-fit: cover;
+  object-position: center;
+}
+body #organization-content article .organization-contact {
+  margin-top: 20px;
+}
+body #organization-content article .organization-contact h1,
+body #organization-content article .organization-contact p {
+  font-family: "Quicksand";
+}
+body #organization-content article .organization-contact hr {
+  color: teal;
+}
+body #organization-content .organization-info {
+  box-sizing: border-box;
+  height: 50%;
+}
+body #organization-content .organization-info section h2 {
+  font-family: "Quicksand";
+  margin: 10px;
+}
+body #organization-content .organization-info section figure {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+body #organization-content .organization-info section figure img {
+  display: inline-block;
+  width: 200px;
+  margin: 10px auto;
+}
+body #organization-content .organization-info section figure figcaption {
+  font-weight: bold;
+  color: teal;
+}
+body #organization-content .organization-info section p {
+  text-align: left;
+  margin-left: 20px;
+}
+body #organization-content .organization-info section p span {
+  font-weight: bold;
+}
+body #organization-content aside {
+  box-shadow: 1px 1px 4px 0px gray;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  width: 70%;
+  flex-grow: 1;
+}
 body #hero-container {
   margin-top: 10%;
 }
@@ -160,7 +277,7 @@ body #hero-container #hero-section .hero-mage div img {
   width: 700px;
 }
 body main {
-  margin-top: 70px;
+  margin-top: 7%;
 }
 body main #form-content form {
   box-shadow: 1px 1px 4px 0px gray;
@@ -280,6 +397,19 @@ footer p {
     align-items: center;
     margin-top: 12%;
   }
+  #content #author-aside {
+    width: 50%;
+  }
+  #organization-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  #organization-content .robotics-elements .robotics-elements-card {
+    flex-wrap: wrap;
+  }
+  #organization-content .organization-info {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 576px) {
   header nav div a {
@@ -288,6 +418,10 @@ footer p {
   }
   header nav div a img {
     width: 100%;
+  }
+  .organization-content {
+    flex-wrap: wrap;
+    flex-direction: column;
   }
   main #form-content {
     margin-top: 10%;
